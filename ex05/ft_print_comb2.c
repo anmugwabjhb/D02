@@ -6,16 +6,9 @@
 /*   By: anmugwab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 09:11:01 by anmugwab          #+#    #+#             */
-/*   Updated: 2020/07/10 09:32:47 by anmugwab         ###   ########.fr       */
+/*   Updated: 2020/07/10 12:18:14 by anmugwab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd>
-
-void ft_putchar(char c)
-{
-	write(1,&c,1);
-}
 
 void ft_print_comb2(void)
 {
@@ -47,23 +40,45 @@ void ft_print_comb2(void)
 						ft_putchar(',');
 						ft_putchar(' ');
 					}
+					else if  ((first == third && second < fourth) || (second == fourth && first < third))
+					{
+						
+						ft_putchar(first);
+						ft_putchar(second);
+						ft_putchar(' ');
+						ft_putchar(third);
+						ft_putchar(fourth);	
+					    if ( first == '9' && second == '8' && third == '9' && fourth == '9')
+						{	
+				     	    ft_putchar('\n');
+						}
+						else
+						{
+							ft_putchar(',');
+							ft_putchar(' ');
+						}
 
-					fouth++;
+						
+							
+						
+					}
+						
+							
+
+					fourth++;
 				}
-				fourth = 0;
+				fourth = '0';
 				third++;
 
 			}
-			third = 0;
+			third = '0';
 			second++;
 		}
-		second = 0;
+		second = '0';
 		first++;
 	}
-}
 
-int main(void)
-{
-	ft_print_comb2();
-	return (0);
+	ft_putchar('\n');
+
+
 }
