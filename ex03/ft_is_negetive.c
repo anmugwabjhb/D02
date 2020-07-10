@@ -6,11 +6,9 @@
 /*   By: anmugwab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 16:58:38 by anmugwab          #+#    #+#             */
-/*   Updated: 2020/07/09 17:06:08 by anmugwab         ###   ########.fr       */
+/*   Updated: 2020/07/10 08:18:58 by anmugwab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void ft_is_negetive(int n){
 	if (n < 0)
